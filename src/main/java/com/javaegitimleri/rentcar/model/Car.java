@@ -1,4 +1,4 @@
-package com.javaegitimleri.rentcar;
+package com.javaegitimleri.rentcar.model;
 
 public class Car {
     private long id;

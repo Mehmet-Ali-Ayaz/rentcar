@@ -4,11 +4,11 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Tenant {
+public class Renter {
 
 
     private long Id;
-    private String tenantName;
+    private String renterName;
     private String rentalFee;
     private Date rentalDate;
     private Date rentalEndDate;
@@ -22,12 +22,12 @@ public class Tenant {
         this.Id = Id;
     }
 
-    public String getTenantName() {
-        return tenantName;
+    public String getRenterName() {
+        return renterName;
     }
 
-    public void setTenantName(String tenantName) {
-        this.tenantName = tenantName;
+    public void setRenterName(String renterName) {
+        this.renterName = renterName;
     }
 
     public String getRentalFee() {
@@ -65,7 +65,7 @@ public class Tenant {
     @Override
     public String toString() {
         return "Tenants{" +
-                "tenantName='" + tenantName + '\'' +
+                "tenantName='" + renterName + '\'' +
                 ", rentalFee='" + rentalFee + '\'' +
                 ", rentalDate=" + rentalDate +
                 ", rentalEndDate=" + rentalEndDate +

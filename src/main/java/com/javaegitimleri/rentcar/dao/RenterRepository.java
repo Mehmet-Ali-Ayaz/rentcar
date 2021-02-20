@@ -1,16 +1,16 @@
 package com.javaegitimleri.rentcar.dao;
 
-import com.javaegitimleri.rentcar.model.Tenant;
+import com.javaegitimleri.rentcar.model.Renter;
 
 import java.util.List;
 
-public interface TenantRepository {
+public interface RenterRepository {
 
-    List<Tenant>findAll();
-    Tenant findById(Long Id);
-    List<Tenant> findByTenantName(String tenantName);
-    void create(Tenant tenant);
-    Tenant update(Tenant tenant);
+    List<Renter>findAll();
+    Renter findById(Long Id);
+    List<Renter> findByrenterName(String renterName);
+    void create(Renter tenant);
+    Renter update(Renter renter);
     void delete (long Id);
 
 }
