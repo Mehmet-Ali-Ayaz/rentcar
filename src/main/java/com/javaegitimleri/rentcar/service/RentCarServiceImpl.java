@@ -4,10 +4,11 @@ import com.javaegitimleri.rentcar.dao.RenterRepository;
 import com.javaegitimleri.rentcar.model.Renter;
 import io.micrometer.core.instrument.Meter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.yaml.snakeyaml.events.Event;
 
 import java.util.List;
-
+@Service
 public class RentCarServiceImpl implements RentCarService{
 
     private RenterRepository renterRepository;

@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class RentCarController {
 
-
+    @Autowired
     private RentCarService rentCarService;
 
          @RequestMapping("/renters")
