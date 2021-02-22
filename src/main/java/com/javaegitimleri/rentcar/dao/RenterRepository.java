@@ -9,7 +9,7 @@ public interface RenterRepository {
     List<Renter>findAll();
     Renter findById(Long Id);
     List<Renter> findByrenterName(String renterName);
-    void create(Renter tenant);
+    void create(Renter renter);
     Renter update(Renter renter);
     void delete (long Id);
 

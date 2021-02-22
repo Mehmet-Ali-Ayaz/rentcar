@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/css/rentcar.css}" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<table>
+    <thead>
+    <tr style="font-weight: bold;" bgcolor="#90ee90">
+        <td>ID</td>
+        <td>Renter Name</td>
+    </tr>
+    </thead>
+    <th:block th:each="renter, iterStat:${renters}">
+        <tr th:bgcolor="${iterStat.odd}?white:Lightgray">
+           <td th:text="${renter.id}"></td>
+            <td th:text="${renter.renterName}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

@@ -4,7 +4,12 @@ import com.javaegitimleri.rentcar.dao.RenterRepository;
 import com.javaegitimleri.rentcar.model.Renter;
 import org.springframework.stereotype.Repository;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Repository
@@ -15,20 +20,20 @@ public class RenterRepositoryInMemoryImpl implements RenterRepository {
 
     public RenterRepositoryInMemoryImpl(){
         Renter renter1 = new Renter();
-        renter1.setId(1l);
-        renter1.setRenterName("Kenan Sevindik");
+        renter1.setId(1L);
+        renter1.setRenterName("Kenan Ayaz");
 
         Renter renter2 = new Renter();
-        renter2.setId(2l);
+        renter2.setId(2L);
         renter2.setRenterName("Ali Ayaz");
 
         Renter renter3 = new Renter();
-        renter3.setId(3l);
+        renter3.setId(3L);
         renter3.setRenterName("Nazan Birgul");
 
         Renter renter4 = new Renter();
-        renter4.setId(4l);
-        renter4.setRenterName("Kenan Ayaz");
+        renter4.setId(4L);
+        renter4.setRenterName("Murat Can");
 
         rentersMap.put(renter1.getId(), renter1);
         rentersMap.put(renter2.getId(), renter2);
