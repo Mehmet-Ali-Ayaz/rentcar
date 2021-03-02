@@ -1,5 +1,6 @@
 package com.javaegitimleri.rentcar.service;
 
+import com.javaegitimleri.rentcar.exception.RenterNotFoundException;
 import com.javaegitimleri.rentcar.model.Renter;
 
 import java.util.List;
