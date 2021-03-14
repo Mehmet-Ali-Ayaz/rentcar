@@ -3,14 +3,22 @@ package com.javaegitimleri.rentcar.service;
 import com.javaegitimleri.rentcar.dao.RenterRepository;
 import com.javaegitimleri.rentcar.exception.RenterNotFoundException;
 import com.javaegitimleri.rentcar.model.Renter;
+import io.swagger.models.Contact;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 @Service
 public class RentCarServiceImpl implements RentCarService{
 
     private RenterRepository renterRepository;
+    @Autowired
+    public RentCarServiceImpl(RenterRepository renterRepository) {
+        this.renterRepository = renterRepository;
+    }
 
     @Autowired
     public void setRenterRepository(RenterRepository renterRepository) {
@@ -51,4 +59,8 @@ public class RentCarServiceImpl implements RentCarService{
         renterRepository.delete(id);
 
     }
+
+
+
+
 }
